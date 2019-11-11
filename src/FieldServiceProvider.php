@@ -18,7 +18,7 @@ class FieldServiceProvider extends ServiceProvider
     public function boot()
     {
         Nova::serving(function (ServingNova $event) {
-            Nova::script('nova-fields', __DIR__.'/../dist/js/field.js');
+            Nova::script('nova-fields', __DIR__.'/../dist/js/field.es5.js');
             Nova::style('nova-fields', __DIR__.'/../dist/css/field.css');
         });
 
